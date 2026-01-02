@@ -49,6 +49,70 @@ a:hover {
     min-height: 100vh;
 }
 
+/* ========================================
+   NRF 2026 STICKY BANNER
+   ======================================== */
+.nrf-banner {
+    background: linear-gradient(135deg, var(--coral-500) 0%, var(--coral-600) 100%);
+    padding: 12px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1001;
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(248, 113, 113, 0.3); }
+    50% { box-shadow: 0 0 30px rgba(248, 113, 113, 0.5); }
+}
+
+.nrf-banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.nrf-badge {
+    background: white;
+    color: var(--coral-600);
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nrf-text {
+    color: white;
+    font-size: 0.95rem;
+}
+
+.nrf-text strong {
+    font-weight: 700;
+}
+
+.nrf-cta {
+    background: white;
+    color: var(--coral-600);
+    padding: 8px 20px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.nrf-cta:hover {
+    background: var(--gold-400);
+    color: #0a0a0a;
+    transform: translateY(-2px);
+}
+
 /* Logo */
 .logo-icon-img {
     width: 32px;
@@ -210,6 +274,12 @@ a:hover {
     max-width: 560px;
 }
 
+.hero-description-large {
+    font-size: 1.25rem;
+    color: var(--slate-300);
+    font-weight: 500;
+}
+
 .hero-description strong {
     color: var(--slate-200);
 }
@@ -223,6 +293,36 @@ a:hover {
     display: flex;
     gap: 16px;
     margin-top: 16px;
+}
+
+/* ========================================
+   HERO TRUST BADGES
+   ======================================== */
+.hero-trust-badges {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.hero-trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(248, 113, 113, 0.2);
+    border-radius: 100px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+}
+
+.hero-trust-badge .badge-icon {
+    font-size: 1rem;
+}
+
+.hero-trust-badge .badge-text {
+    color: var(--slate-300);
+    font-weight: 500;
 }
 
 .hero-visual {
@@ -311,6 +411,143 @@ a:hover {
     color: var(--slate-400);
     font-size: 0.85rem;
     margin-top: 4px;
+}
+
+/* ========================================
+   VIDEO DEMO COMPARISON SECTION
+   ======================================== */
+.video-demo-section {
+    padding: 80px 60px;
+    background: linear-gradient(180deg, #0a0a0a 0%, #0f172a 50%, #0a0a0a 100%);
+}
+
+.video-comparison {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-card {
+    flex: 1;
+    max-width: 500px;
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 24px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.video-card.old-way {
+    border: 2px solid rgba(239, 68, 68, 0.3);
+}
+
+.video-card.new-way {
+    border: 2px solid rgba(34, 197, 94, 0.3);
+    box-shadow: 0 0 40px rgba(34, 197, 94, 0.1);
+}
+
+.video-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.video-card.old-way .video-label {
+    background: rgba(239, 68, 68, 0.1);
+    color: #FCA5A5;
+}
+
+.video-card.new-way .video-label {
+    background: rgba(34, 197, 94, 0.1);
+    color: #86EFAC;
+}
+
+.video-label-icon {
+    font-size: 1.3rem;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.video-stats {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 20px;
+}
+
+.video-stats.old {
+    background: rgba(239, 68, 68, 0.05);
+}
+
+.video-stats.new {
+    background: rgba(34, 197, 94, 0.05);
+}
+
+.video-stat {
+    text-align: center;
+}
+
+.video-stat .stat-number {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.video-stats.old .stat-number {
+    color: #FCA5A5;
+}
+
+.video-stats.new .stat-number {
+    color: #86EFAC;
+}
+
+.video-stat .stat-desc {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--slate-400);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.video-stat.emoji .stat-emoji {
+    font-size: 2rem;
+}
+
+.video-vs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--slate-500);
+    padding: 0 8px;
+}
+
+.video-caption {
+    text-align: center;
+    color: var(--slate-500);
+    font-size: 0.9rem;
+    margin-top: 24px;
+    font-style: italic;
 }
 
 /* Section Styles */
@@ -752,6 +989,85 @@ a:hover {
     transform: translateY(-4px);
 }
 
+/* ========================================
+   8-CLICK PROBLEM CARD - SPECIAL STYLING
+   ======================================== */
+.use-case-card.eight-click-card {
+    grid-column: span 1;
+    border-color: rgba(248, 113, 113, 0.3);
+    background: linear-gradient(145deg, rgba(248, 113, 113, 0.05) 0%, rgba(30, 41, 59, 0.5) 100%);
+}
+
+.eight-click-math {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 8px 0;
+}
+
+.math-equation {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 16px;
+    border-radius: 12px;
+}
+
+.math-equation.old {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.math-equation.new {
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.math-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.math-equation.old .math-label {
+    color: #FCA5A5;
+}
+
+.math-equation.new .math-label {
+    color: #86EFAC;
+}
+
+.math-formula {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'SF Mono', 'Consolas', monospace;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.math-equation.old .math-formula {
+    color: #FCA5A5;
+}
+
+.math-equation.new .math-formula {
+    color: #86EFAC;
+}
+
+.math-result {
+    font-size: 1.25rem;
+}
+
+.math-result.bad {
+    color: #FCA5A5;
+}
+
+.math-result.good {
+    color: #22C55E;
+}
+
 .use-case-icon {
     font-size: 2.5rem;
 }
@@ -962,7 +1278,75 @@ a:hover {
     color: white;
 }
 
-/* Responsive */
+/* ========================================
+   RESPONSIVE STYLES
+   ======================================== */
+
+/* NRF Banner Responsive */
+@media (max-width: 768px) {
+    .nrf-banner {
+        padding: 10px 16px;
+    }
+    
+    .nrf-banner-content {
+        gap: 8px;
+    }
+    
+    .nrf-text {
+        font-size: 0.85rem;
+    }
+    
+    .nrf-badge {
+        font-size: 0.65rem;
+        padding: 3px 8px;
+    }
+}
+
+/* Video Demo Responsive */
+@media (max-width: 1024px) {
+    .video-comparison {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .video-card {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .video-vs {
+        padding: 16px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-demo-section {
+        padding: 60px 20px;
+    }
+    
+    .video-stats {
+        gap: 16px;
+        padding: 16px;
+    }
+    
+    .video-stat .stat-number {
+        font-size: 1.5rem;
+    }
+}
+
+/* Hero Trust Badges Responsive */
+@media (max-width: 768px) {
+    .hero-trust-badges {
+        justify-content: center;
+    }
+    
+    .hero-trust-badge {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+}
+
+/* General Responsive */
 @media (max-width: 1024px) {
     .hero-content {
         grid-template-columns: 1fr;
