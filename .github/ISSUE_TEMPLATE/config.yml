@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://github.com/AmicisSolutionsInc/commerce-agents/wiki
+    about: Check out our documentation and guides
+  - name: General Questions
+    url: https://github.com/AmicisSolutionsInc/commerce-agents/discussions
+    about: Ask questions in GitHub Discussions
