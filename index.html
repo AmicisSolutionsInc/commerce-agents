@@ -13,6 +13,15 @@
 </head>
 <body>
     <div class="marketing-container">
+        <!-- NRF 2026 Sticky Banner -->
+        <div class="nrf-banner">
+            <div class="nrf-banner-content">
+                <span class="nrf-badge">NRF 2026</span>
+                <span class="nrf-text">Going to NRF Big Show? <strong>See the Agent live</strong> at Partner Tech USA — <strong>Booth 3111</strong></span>
+                <a href="https://bigshow26.mapyourshow.com/8_0/exhview/index.cfm?hallID=B&selectedBooth=3111" target="_blank" class="nrf-cta">Find Our Booth →</a>
+            </div>
+        </div>
+
         <!-- Sticky Header Navigation -->
         <header class="sticky-header">
             <div class="header-content">
@@ -37,22 +46,34 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        <span class="gradient-coral">AI Agents</span> for<br>
-                        <span class="gradient-gold">Microsoft Dynamics 365 Commerce</span>
+                        <span class="gradient-coral">Your POS Has Ears.</span><br>
+                        <span class="gradient-gold">Stop Clicking, Start Commanding.</span>
                     </h1>
-                    <p class="hero-description">
-                        <strong>Stop clicking through menus</strong><br>
-                        Quickly bring AI Agents into your Microsoft Dynamics 365 Commerce implementation and empower your frontline workers to
-                        control operations with natural language, using voice or chat.
+                    <p class="hero-description hero-description-large">
+                        The first voice-controlled AI Agent that sees your screen and drives Microsoft Dynamics 365 Commerce for you.
                     </p>
                     <p class="hero-description">
-                        <strong>Prompt your business applications to take action</strong><br>
                         Say <em>"find customer Karen Berg"</em> and the agent finds her. Say <em>"show me her purchase history"</em>
                         and it fetches her orders directly from Commerce. No menu navigation. Instant results.
                     </p>
                     <div class="hero-buttons">
                         <a href="https://web.happysky-5ae07867.eastus2.azurecontainerapps.io/signup" class="btn btn-primary btn-large">Get Started Free</a>
                         <a href="#features" class="btn btn-secondary btn-large">Learn More</a>
+                    </div>
+                    <!-- Trust Badges in Hero -->
+                    <div class="hero-trust-badges">
+                        <div class="hero-trust-badge">
+                            <span class="badge-icon">🏆</span>
+                            <span class="badge-text">Microsoft Cloud Partner</span>
+                        </div>
+                        <div class="hero-trust-badge">
+                            <span class="badge-icon">🛒</span>
+                            <span class="badge-text">D365 Commerce Experts</span>
+                        </div>
+                        <div class="hero-trust-badge">
+                            <span class="badge-icon">🔐</span>
+                            <span class="badge-text">Enterprise Security</span>
+                        </div>
                     </div>
                 </div>
                 <div class="hero-visual">
@@ -82,6 +103,66 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Video Demo Comparison Section -->
+        <section class="video-demo-section" id="demo">
+            <div class="section-header">
+                <h2 class="section-title">See the Difference</h2>
+                <p class="section-subtitle">Same task. One takes 30+ seconds of clicking. The other takes 2 seconds of talking.</p>
+            </div>
+            <div class="video-comparison">
+                <div class="video-card old-way">
+                    <div class="video-label">
+                        <span class="video-label-icon">🖱️</span>
+                        <span class="video-label-text">The Old Way</span>
+                    </div>
+                    <div class="video-wrapper">
+                        <video autoplay loop muted playsinline>
+                            <source src="media/StoreCommerceFindKarenShoeSize.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-stats old">
+                        <div class="video-stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-desc">Clicks</span>
+                        </div>
+                        <div class="video-stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-desc">Seconds</span>
+                        </div>
+                        <div class="video-stat emoji">
+                            <span class="stat-emoji">😤</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-vs">VS</div>
+                <div class="video-card new-way">
+                    <div class="video-label">
+                        <span class="video-label-icon">🎤</span>
+                        <span class="video-label-text">With Amicis Agent</span>
+                    </div>
+                    <div class="video-wrapper">
+                        <video autoplay loop muted playsinline>
+                            <source src="media/AmicisCommerceAgentFindKarenShoeSize.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-stats new">
+                        <div class="video-stat">
+                            <span class="stat-number">1</span>
+                            <span class="stat-desc">Voice Command</span>
+                        </div>
+                        <div class="video-stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-desc">Seconds</span>
+                        </div>
+                        <div class="video-stat emoji">
+                            <span class="stat-emoji">✅</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="video-caption">Finding Karen Berg's shoe size: manual navigation vs. voice command</p>
         </section>
 
         <!-- Agent Types Section -->
@@ -247,16 +328,23 @@
                 <p class="section-subtitle">See how voice commands can optimize your operations.</p>
             </div>
             <div class="use-cases-grid">
-                <div class="use-case-card">
+                <div class="use-case-card eight-click-card">
                     <div class="use-case-icon">⚡</div>
                     <h3 class="use-case-title">The 8-Click Problem</h3>
                     <p class="use-case-scenario">Looking up a customer's purchase history used to mean: navigate to customers, search, select, click history tab, wait, scroll. That's 8+ clicks and 30+ seconds every time. The agent fetches it directly from Commerce APIs.</p>
+                    <!-- Visual Math Equation -->
+                    <div class="eight-click-math">
+                        <div class="math-equation old">
+                            <span class="math-label">Traditional POS:</span>
+                            <span class="math-formula">8 Clicks + 30 Seconds = <span class="math-result bad">😤</span></span>
+                        </div>
+                        <div class="math-equation new">
+                            <span class="math-label">Amicis Agent:</span>
+                            <span class="math-formula">1 Voice Command + 2 Seconds = <span class="math-result good">✅</span></span>
+                        </div>
+                    </div>
                     <div class="use-case-example">
                         <span class="example-prompt">"Show me Karen Berg's recent purchases"</span>
-                    </div>
-                    <div class="use-case-benefit">
-                        <span class="benefit-label">Result:</span>
-                        <span class="benefit-text">Instant results from Commerce, zero clicks</span>
                     </div>
                 </div>
                 <div class="use-case-card">
