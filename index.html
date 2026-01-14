@@ -3,30 +3,486 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketing Page</title>
+    <title>Amicis Commerce Agents - AI for Microsoft Dynamics 365 Commerce</title>
+    <meta name="description" content="AI Agents for Microsoft Dynamics 365 Commerce. Control Store Commerce and Commerce HQ with natural language using voice or chat.">
+    <link rel="icon" href="amicis-logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Marketing Page</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Our Services</h2>
-            <p>Details about services offered.</p>
+    <div class="marketing-container">
+        <!-- NRF 2026 Sticky Banner -->
+        <div class="nrf-banner">
+            <div class="nrf-banner-content">
+                <span class="nrf-badge">NRF 2026</span>
+                <span class="nrf-text">Going to NRF Big Show? <strong>See the Agent live</strong> at Partner Tech USA — <strong>Booth 3111</strong></span>
+                <a href="https://bigshow26.mapyourshow.com/8_0/exhview/index.cfm?hallID=B&selectedBooth=3111" target="_blank" class="nrf-cta">Find Our Booth →</a>
+            </div>
+        </div>
+
+        <!-- Sticky Header Navigation -->
+        <header class="sticky-header">
+            <div class="header-content">
+                <a href="#top" class="header-logo">
+                    <img src="amicis-logo.svg" alt="Amicis" class="logo-icon-img">
+                    <span class="logo-text">Amicis Commerce Agents</span>
+                </a>
+                <nav class="header-nav">
+                    <a href="#top" class="nav-link">Home</a>
+                    <a href="#agents" class="nav-link">Agents</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#use-cases" class="nav-link">Use Cases</a>
+                    <a href="https://web.happysky-5ae07867.eastus2.azurecontainerapps.io/signup" class="btn btn-primary btn-small">Sign Up Free</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="top">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-coral">Your POS Has Ears.</span><br>
+                        <span class="gradient-gold">Stop Clicking, Start Commanding.</span>
+                    </h1>
+                    <p class="hero-description hero-description-large">
+                        The first voice-controlled AI Agent that sees your screen and drives Microsoft Dynamics 365 Commerce for you.
+                    </p>
+                    <p class="hero-description">
+                        Say <em>"find customer Karen Berg"</em> and the agent finds her. Say <em>"show me her purchase history"</em>
+                        and it fetches her orders directly from Commerce. No menu navigation. Instant results.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://web.happysky-5ae07867.eastus2.azurecontainerapps.io/signup" class="btn btn-primary btn-large">Get Started Free</a>
+                        <a href="#features" class="btn btn-secondary btn-large">Learn More</a>
+                    </div>
+                    <!-- Trust Badges in Hero -->
+                    <div class="hero-trust-badges">
+                        <div class="hero-trust-badge">
+                            <span class="badge-icon">🏆</span>
+                            <span class="badge-text">Microsoft Cloud Partner</span>
+                        </div>
+                        <div class="hero-trust-badge">
+                            <span class="badge-icon">🛒</span>
+                            <span class="badge-text">Microsoft Dynamics 365 Commerce Experts</span>
+                        </div>
+                        <div class="hero-trust-badge">
+                            <span class="badge-icon">🔐</span>
+                            <span class="badge-text">Enterprise Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="ai-explainer-box">
+                        <div class="explainer-header">
+                            <span class="explainer-icon">🤖</span>
+                            <span class="explainer-title">What's an AI Agent?</span>
+                        </div>
+                        <p class="explainer-body">
+                            Unlike chatbots that just answer questions, an AI agent can actually <strong>do things</strong> like search 
+                            data, update tasks, and execute workflows on your behalf.
+                        </p>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">40+</span>
+                            <span class="stat-label">Commerce Actions</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">Voice</span>
+                            <span class="stat-label">or Chat Input</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">Remote</span>
+                            <span class="stat-label">Control</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Promotions</h2>
-            <p>Current promotions and offers.</p>
+
+        <!-- Video Demo Comparison Section -->
+        <section class="video-demo-section" id="demo">
+            <div class="section-header">
+                <h2 class="section-title">See the Difference</h2>
+                <p class="section-subtitle">Same task. One takes 30+ seconds of clicking. The other takes 2 seconds of talking.</p>
+            </div>
+            <div class="video-comparison">
+                <div class="video-card old-way">
+                    <div class="video-label">
+                        <span class="video-label-icon">🖱️</span>
+                        <span class="video-label-text">The Old Way</span>
+                    </div>
+                    <div class="video-wrapper">
+                        <video autoplay loop muted playsinline>
+                            <source src="media/StoreCommerceFindKarenShoeSize.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-stats old">
+                        <div class="video-stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-desc">Clicks</span>
+                        </div>
+                        <div class="video-stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-desc">Seconds</span>
+                        </div>
+                        <div class="video-stat emoji">
+                            <span class="stat-emoji">😤</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-vs">VS</div>
+                <div class="video-card new-way">
+                    <div class="video-label">
+                        <span class="video-label-icon">🎤</span>
+                        <span class="video-label-text">With Amicis Agent</span>
+                    </div>
+                    <div class="video-wrapper">
+                        <video autoplay loop muted playsinline>
+                            <source src="media/AmicisCommerceAgentFindKarenShoeSize.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-stats new">
+                        <div class="video-stat">
+                            <span class="stat-number">1</span>
+                            <span class="stat-desc">Voice Command</span>
+                        </div>
+                        <div class="video-stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-desc">Seconds</span>
+                        </div>
+                        <div class="video-stat emoji">
+                            <span class="stat-emoji">✅</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="video-caption">Finding Karen Berg's shoe size: manual navigation vs. voice command</p>
         </section>
-        <!-- Removed NRF banner -->
-        <!-- <section>
-            <h2>NRF Banner</h2>
-            <img src="nrf-banner.jpg" alt="NRF Banner">
-        </section> -->
-    </main>
-    <footer>
-        <p>&copy; 2026 Amicis Solutions Inc.</p>
-    </footer>
+
+        <!-- Agent Types Section -->
+        <section id="agents" class="agents-section">
+            <div class="section-header">
+                <h2 class="section-title">Purpose-Built AI Agents</h2>
+                <p class="section-subtitle">Specialized agents for every role in your Microsoft Dynamics 365 Commerce environment.</p>
+            </div>
+            <div class="agents-layout">
+                <div class="agent-card hq">
+                    <div class="agent-icon">🏢</div>
+                    <h3>Commerce HQ Agent</h3>
+                    <p class="agent-environment">For Finance & Operations • Commerce Headquarters</p>
+                    <ul class="agent-capabilities">
+                        <li>Workforce management and hiring</li>
+                        <li>Order management and fulfillment</li>
+                        <li>Inventory queries across locations</li>
+                        <li>Product and assortment management</li>
+                        <li>Reporting and analytics</li>
+                    </ul>
+                    <div class="agent-example">
+                        <span class="example-label">💬 Try saying:</span>
+                        <code>"Hire a new cashier for the downtown store starting next Monday"</code>
+                    </div>
+                    <div class="coming-soon-badge">Coming Soon</div>
+                </div>
+                <div class="agents-visual">
+                    <div class="device-mockup">
+                        <div class="screen-glow"></div>
+                        <div class="floating-card center">🛒</div>
+                        <div class="floating-card orbit-1">⚡</div>
+                        <div class="floating-card orbit-2">✨</div>
+                        <div class="floating-card orbit-3">📊</div>
+                        <div class="floating-card orbit-4">💬</div>
+                    </div>
+                </div>
+                <div class="agent-card store">
+                    <div class="agent-icon">🛒</div>
+                    <h3>Store Commerce Agent</h3>
+                    <p class="agent-environment">For POS terminals • Store Commerce App • Cloud POS</p>
+                    <ul class="agent-capabilities">
+                        <li>Customer lookup and purchase history</li>
+                        <li>Product search and inventory checks</li>
+                        <li>Clienteling and client book management</li>
+                        <li>Task management and checklists</li>
+                        <li>Voice-controlled transactions</li>
+                        <li>Real-time training and support</li>
+                    </ul>
+                    <div class="agent-example">
+                        <span class="example-label">💬 Try saying:</span>
+                        <code>"Find customer Karen Berg and show me her wish list"</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <h2 class="section-title">Why Microsoft Dynamics 365 Teams Choose Amicis Commerce Agents</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎤</div>
+                    <h3>Voice-First POS Control</h3>
+                    <p>Say what you want done and the agent does it. Search products, look up customers, check inventory, manage tasks using natural conversation instead of menu navigation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏪</div>
+                    <h3>Manage All Stores From Anywhere</h3>
+                    <p>See every POS terminal across your organization in one dashboard. Send commands remotely. No VPN, no remote desktop sessions, no waiting for someone to walk to the register.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>Works With Your Existing Setup</h3>
+                    <p>No POS extensions. No code changes. No developer involvement. The agent connects to your existing Store Commerce installation in minutes and starts working immediately.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛒</div>
+                    <h3>40+ Commerce API Actions</h3>
+                    <p>Deep integration with Commerce Retail Server APIs. Product search, customer lookup, purchase history, wish lists, task management, client books are all accessible through voice or chat.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Instant Training & Support</h3>
+                    <p>New employees ask the agent instead of interrupting managers. It sees the current screen, understands the context, and guides them through complex tasks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Conversation History & Insights</h3>
+                    <p>See every question your staff asks the AI. Identify training gaps. Track what's happening across stores. Full audit trail for compliance without the paperwork.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works-section">
+            <div class="section-header">
+                <h2 class="section-title">No Code Changes Required</h2>
+                <p class="section-subtitle">The agent connects to your existing Microsoft Dynamics 365 Commerce installation without modifications.</p>
+            </div>
+            <div class="how-it-works-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Install the Agent</h3>
+                    <p>Download and run the installer on your POS terminal. Takes less than 5 minutes.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Connect to Store Commerce</h3>
+                    <p>The agent automatically connects to your running POS with no Commerce extensions needed.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Start Talking</h3>
+                    <p>Say what you want done. The agent sees your screen, understands the context, and takes action.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Makes This Different Section -->
+        <section id="difference" class="difference-section">
+            <div class="section-header">
+                <h2 class="section-title">This Isn't Just a Chatbot</h2>
+                <p class="section-subtitle">Most AI tools just answer questions. This agent actually does things.</p>
+            </div>
+            <div class="comparison-table">
+                <div class="comparison-row header">
+                    <div class="comparison-cell"></div>
+                    <div class="comparison-cell">Traditional Chatbot</div>
+                    <div class="comparison-cell highlight">Amicis Agent</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell label">Screen Awareness</div>
+                    <div class="comparison-cell">❌ Can't see your POS</div>
+                    <div class="comparison-cell highlight">✓ Sees your screen + accesses Commerce APIs</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell label">Takes Action</div>
+                    <div class="comparison-cell">❌ Only answers questions</div>
+                    <div class="comparison-cell highlight">✓ Fetches data, updates records, automates tasks</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell label">Integration</div>
+                    <div class="comparison-cell">❌ Requires custom development</div>
+                    <div class="comparison-cell highlight">✓ Works instantly, no code changes</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell label">Voice Control</div>
+                    <div class="comparison-cell">❌ Text only</div>
+                    <div class="comparison-cell highlight">✓ Voice-first with audio responses</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell label">Remote Management</div>
+                    <div class="comparison-cell">❌ Not available</div>
+                    <div class="comparison-cell highlight">✓ Cloud hub for all stores</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section id="use-cases" class="use-cases-section">
+            <div class="section-header">
+                <h2 class="section-title">Real Problems, Real Solutions</h2>
+                <p class="section-subtitle">See how voice commands can optimize your operations.</p>
+            </div>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">⚡</div>
+                    <h3 class="use-case-title">The 8-Click Problem</h3>
+                    <p class="use-case-scenario">Looking up a customer's purchase history used to mean: navigate to customers, search, select, click history tab, wait, scroll. That's 8+ clicks and 30+ seconds every time. The agent fetches it directly from Commerce APIs.</p>
+                    <div class="use-case-example">
+                        <span class="example-prompt">"Show me Karen Berg's recent purchases"</span>
+                    </div>
+                    <div class="use-case-benefit">
+                        <span class="benefit-label">Result:</span>
+                        <span class="benefit-text">Instant results from Commerce, zero clicks</span>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">👋</div>
+                    <h3 class="use-case-title">New Employee Training</h3>
+                    <p class="use-case-scenario">New hires constantly interrupt managers with 'how do I...?' questions. Training takes weeks. Mistakes are common.</p>
+                    <div class="use-case-example">
+                        <span class="example-prompt">"How do I process a return for a customer?"</span>
+                    </div>
+                    <div class="use-case-benefit">
+                        <span class="benefit-label">Result:</span>
+                        <span class="benefit-text">Productive in days, not weeks</span>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">👑</div>
+                    <h3 class="use-case-title">Personal Client Relationships</h3>
+                    <p class="use-case-scenario">Great associates remember their customers. But juggling client books, preferences, and follow-ups while serving the line? Nearly impossible.</p>
+                    <div class="use-case-example">
+                        <span class="example-prompt">"Show me my client book. Add Karen Berg with a note that she's interested in Surface laptops"</span>
+                    </div>
+                    <div class="use-case-benefit">
+                        <span class="benefit-label">Result:</span>
+                        <span class="benefit-text">Build VIP relationships effortlessly</span>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">📋</div>
+                    <h3 class="use-case-title">Store Task Management</h3>
+                    <p class="use-case-scenario">Checklists get lost. Tasks slip through the cracks during busy shifts. Managers only find out when it's too late.</p>
+                    <div class="use-case-example">
+                        <span class="example-prompt">"What tasks are due today? Mark the inventory count as complete"</span>
+                    </div>
+                    <div class="use-case-benefit">
+                        <span class="benefit-label">Result:</span>
+                        <span class="benefit-text">Nothing falls through the cracks</span>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🔍</div>
+                    <h3 class="use-case-title">Product Discovery</h3>
+                    <p class="use-case-scenario">Customer asks 'do you have this in blue?' Associate stops everything to search the catalog. Customer waits. Line grows.</p>
+                    <div class="use-case-example">
+                        <span class="example-prompt">"Is this available in blue? What sizes do we have in stock?"</span>
+                    </div>
+                    <div class="use-case-benefit">
+                        <span class="benefit-label">Result:</span>
+                        <span class="benefit-text">Answer while still helping the customer</span>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🔧</div>
+                    <h3 class="use-case-title">Self-Correcting Issues</h3>
+                    <p class="use-case-scenario">After an update, cryptic error appears. Associate reports it. Manager calls IT. IT opens a ticket. Days later they find a missing HQ configuration.</p>
+                    <div class="use-case-example">
+                        <span class="example-prompt">"What does this error mean and can you fix it?"</span>
+                    </div>
+                    <div class="use-case-benefit">
+                        <span class="benefit-label">Result:</span>
+                        <span class="benefit-text">AI reviews the POS logs, checks Headquarters, and fixes the missing configuration automatically.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="signup" class="cta-section">
+            <h2>Ready to fire up Amicis Commerce Agents in your environment?</h2>
+            <p>See how voice commands and intelligent automation can transform operations, from the store floor to headquarters. No code changes required. Start with one agent and scale from there.</p>
+            <a href="https://web.happysky-5ae07867.eastus2.azurecontainerapps.io/signup" class="btn btn-primary btn-large">Start Free Today</a>
+        </section>
+
+        <!-- Trust Section -->
+        <section class="trust-section">
+            <div class="trust-content">
+                <h3>Built by Microsoft Dynamics 365 Experts</h3>
+                <p>
+                    <strong>Amicis Solutions</strong> is a Microsoft Cloud Partner with 15+ years specializing in 
+                    Microsoft Dynamics 365 for Retail, Restaurants, Convenience, and Hospitality. We've implemented 
+                    Store Commerce for hundreds of locations and built this agent to solve the problems we 
+                    see every day.
+                </p>
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <span class="badge-icon">🏆</span>
+                        <span class="badge-text">Microsoft Cloud Partner</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="badge-icon">🛒</span>
+                        <span class="badge-text">Microsoft Dynamics 365 Commerce</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="badge-icon">🏢</span>
+                        <span class="badge-text">Microsoft Dynamics 365 Finance & Operations</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="badge-icon">📦</span>
+                        <span class="badge-text">Microsoft Dynamics 365 Supply Chain Management</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="badge-icon">🔐</span>
+                        <span class="badge-text">Enterprise Security</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="amicis-logo.svg" alt="Amicis" class="logo-icon-img">
+                    <span class="logo-text">Amicis Commerce Agents</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/AmicisSolutionsInc/commerce-agents/wiki" target="_blank">Documentation</a>
+                    <span class="separator">•</span>
+                    <a href="https://github.com/AmicisSolutionsInc/commerce-agents/issues" target="_blank">Support</a>
+                </div>
+                <p class="footer-copyright">
+                    © 2026 Amicis Solutions Inc. Microsoft Cloud Partner for Retail, Restaurants, Convenience & Hospitality.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <a href="#top" class="back-to-top" id="backToTop" title="Back to Top">↑</a>
+    </div>
+
+    <script>
+        // Back to top button visibility
+        (function() {
+            var btn = document.getElementById('backToTop');
+            if (!btn) return;
+            
+            function updateVisibility() {
+                if (window.scrollY > 200) {
+                    btn.classList.add('visible');
+                } else {
+                    btn.classList.remove('visible');
+                }
+            }
+            
+            window.addEventListener('scroll', updateVisibility);
+            updateVisibility();
+        })();
+    </script>
 </body>
 </html>
